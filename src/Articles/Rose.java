@@ -1,3 +1,5 @@
+package Articles;
+
 public class Rose extends Flower{
 
     public Rose(String nazwa, String kolor, String wielkość, int cena) {

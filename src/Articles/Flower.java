@@ -1,3 +1,5 @@
+package Articles;
+
 public class Flower {
     private String nazwa;
     private String kolor;
@@ -11,7 +13,7 @@ public class Flower {
 
     @Override
     public String toString() {
-        return "Flower{" +
+        return "Articles.Flower{" +
                 "nazwa='" + nazwa + '\'' +
                 ", kolor='" + kolor + '\'' +
                 ", wielkość='" + wielkość + '\'' +
