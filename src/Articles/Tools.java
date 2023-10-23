@@ -4,6 +4,7 @@ public class Tools {
     private String nazwa;
     private String firma;
     private int wysokość;
+    private int cena;
 
     public String getNazwa() {
         return nazwa;
@@ -29,13 +30,26 @@ public class Tools {
         this.wysokość = wysokość;
     }
 
+    public int getCena() {
+        return cena;
+    }
+
+    public void setCena(int cena) {
+        this.cena = cena;
+    }
 
 
-    public Tools(String nazwa, String firma, int wysokość) {
+
+    public Tools(String nazwa, String firma, int wysokość, int cena) {
         this.nazwa = nazwa;
         this.firma = firma;
         this.wysokość = wysokość;
+        this.cena = cena;
     }
+
+
+
+
 
 
 }

@@ -6,6 +6,7 @@ public class Aloes extends Flower{
         super(nazwa, kolor, wielkość, cena);
     }
 
+    @Override
     public void show(){
         super.show();
         System.out.println("informacje: posiada właściwości lecznicze");
