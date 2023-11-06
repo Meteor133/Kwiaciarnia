@@ -1,6 +1,6 @@
 package Articles;
 
-public class Flower {
+public abstract class Flower {
     private String nazwa;
     private String kolor;
     private String wielkość;
