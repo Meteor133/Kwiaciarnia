@@ -16,18 +16,18 @@ public class Main {
         String odp = scan.nextLine();
 
         if(odp.equals("kwiaty")){
-            System.out.println("jakie chcesz kupić kwiaty?");
-            System.out.println("któreś z popularnych? lub podaj własne");
+            System.out.println("Chcesz kupić: Różę, Anturium, Aloesa lub innych kwiatek");
             String odp1 = scan.nextLine();
-                if(odp1.equals("popularne")){
-                    System.out.println("Róża");
-                    System.out.println(("Aloes"));
-                    String odp2 = scan.nextLine();
-                    if(odp2.equals("Róża")){
-                        Rose róża = new Rose("róża", "czerwony", "duża",9);
+            if(odp1.equals("Róża")){
 
-                    }
-                }
+            }
+
+
+        }
+        else if(odp.equals("narzędzia")){
+
+        }
+        else if(odp.equals("nawozy")){
 
         }
 
