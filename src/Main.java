@@ -3,6 +3,7 @@ import Articles.Anturium;
 import Articles.Flower;
 import Articles.Rose;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -23,6 +24,18 @@ public class Main {
             String odp1 = scan.nextLine();
             if(odp1.equals("Róża")){
                 Rose róża = new Rose("Róża", "czerwony", "duża", 6);
+
+                System.out.println("ile ma być ?");
+                String odp2 = scan.nextLine();
+                int x = Integer.parseInt(odp2);
+                ArrayList<Flower> kwiatki = new ArrayList<Flower>();
+                for (int i =0; i < x; i++){
+                    kwiatki.add(róża);
+                }
+
+
+
+
             } else if (odp1.equals("Anturium")) {
                 Anturium anturium = new Anturium("Anturium","różowe", "małe", 13);
             } else if (odp1.equals("Aloes")) {
@@ -37,6 +50,8 @@ public class Main {
 
                 Flower kwiatek = new Flower(nazwa_kwiatka, kolor_kwiatka, wielkośc_kwiatka, 10);
             }
+
+
 
 
         }
