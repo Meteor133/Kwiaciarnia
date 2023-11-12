@@ -19,7 +19,7 @@ public class Main {
         if(odp.equals("kwiaty")){
             System.out.println("Chcesz kupić: Różę, Anturium, Aloesa lub innych kwiatek");
             String odp1 = scan.nextLine();
-            if(odp1.equals("Róża")){
+            if(odp1.equals("Różę")){
                 Rose róża = new Rose("Róża", "czerwony", "duża", 6);
 
                 System.out.println("ile ma być ?");
@@ -36,10 +36,6 @@ public class Main {
                     kwiatki.toString();
                     System.out.println(kwiatki);
                 }
-
-
-
-
 
             } else if (odp1.equals("Anturium")) {
                 Anturium anturium = new Anturium("Anturium","różowe", "małe", 13);
@@ -104,11 +100,34 @@ public class Main {
 
             }
 
-
-
-
         }
         else if(odp.equals("narzędzia")){
+            System.out.println("Jakie to ma być narzędzie?");
+            String nazwa_narzędzia = scan.nextLine();
+            if(nazwa_narzędzia.equals("")){
+                System.out.println("nie podano co to za narzędzie");
+            }
+            System.out.println("Z jakiej firmy ma być?");
+            String firma_narzedzia = scan.nextLine();
+            int cena = 0;
+            if(firma_narzedzia.equals("fiskars")){
+                cena = 50;
+            }
+            else if (firma_narzedzia.equals("bradas")){
+                cena = 40;
+            }
+            else if (firma_narzedzia.equals("gardena")){
+                cena = 45;
+            }
+            else {
+                cena = 20;
+            }
+
+            Tools narzędzie = new Tools(nazwa_narzędzia,firma_narzedzia, cena);
+            System.out.println("Kupujesz:");
+            System.out.println(nazwa_narzędzia);
+            System.out.printf("Firmy:" + " " + firma_narzedzia);
+            System.out.printf("za" + " " + cena + "zł");
 
         }
         else if(odp.equals("nawozy")){

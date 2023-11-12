@@ -3,7 +3,6 @@ package Articles;
 public class Tools {
     private String nazwa;
     private String firma;
-    private int wysokość;
     private int cena;
 
     public String getNazwa() {
@@ -22,12 +21,13 @@ public class Tools {
         this.firma = firma;
     }
 
-    public int getWysokość() {
-        return wysokość;
-    }
-
-    public void setWysokość(int wysokość) {
-        this.wysokość = wysokość;
+    @Override
+    public String toString() {
+        return "Tools{" +
+                "nazwa='" + nazwa + '\'' +
+                ", firma='" + firma + '\'' +
+                ", cena=" + cena +
+                '}';
     }
 
     public int getCena() {
@@ -40,10 +40,9 @@ public class Tools {
 
 
 
-    public Tools(String nazwa, String firma, int wysokość, int cena) {
+    public Tools(String nazwa, String firma, int cena) {
         this.nazwa = nazwa;
         this.firma = firma;
-        this.wysokość = wysokość;
         this.cena = cena;
     }
 
