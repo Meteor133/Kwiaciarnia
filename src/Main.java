@@ -131,7 +131,21 @@ public class Main {
 
         }
         else if(odp.equals("nawozy")){
-
+            System.out.println("chcesz kupić nawóz naturalny czy sztuczny");
+            String odpNawóz = scan.nextLine();
+            if (odpNawóz.equals("naturalny")){
+                Fertilizer nawóz = new Fertilizer("nawóz naturalny", 30, "Zrębkor");
+                System.out.println("Kupujesz:" + " " + nawóz.getNazwa());
+                System.out.println("Za" + " " + nawóz.getCena() + "zł");
+                System.out.println("Produkowany przez" + " " + "Zrębkor");
+            }else if (odpNawóz.equals("sztuczny")){
+                Fertilizer nawóz = new Fertilizer("nawóz sztuczny", 35, "Zrębkor");
+                System.out.println("Kupujesz:" + " " + nawóz.getNazwa());
+                System.out.println("Za" + " " + nawóz.getCena() + "zł");
+                System.out.println("Produkowany przez" + " " + "Florovit");
+            } else {
+                System.out.println("nie wybrano");
+            }
         }
         else {
             System.out.println("wpisano niepoprawną opcję");
