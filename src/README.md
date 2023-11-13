@@ -38,3 +38,5 @@ Oto prosty przykład korzystania z programu:
 3. Określ ilość.
 4. Opcjonalnie, wybierz, czy wyświetlić zakupione przedmioty.
 
+## Informacje odnośnie projektu
+- Został stworzony w Java Development Kit 20
